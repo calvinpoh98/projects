@@ -1,0 +1,80 @@
+﻿header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar {
+    background-color: var(--bs-primary);
+}
+
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+}
+
+/* This is to prevent our cards from going into the footer area */
+/* Can update this if there is a better way to style */
+#main-body {
+    margin-bottom: 100px;
+}
+
+.badge {
+    font-size: 60%;
+    line-height: 1;
+    vertical-align: top;
+    position: relative;
+    top: -.5em;
+    left: -.5em;
+    background-color: var(--bs-secondary);
+}
+
+.custom-login-btn {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    backface-visibility: hidden;
+}
+
+.custom-login-btn:hover {
+    background-color: #343a40; 
+    transform: scale(1.05) translateZ(0);
+    text-shadow: 0 0 1px currentColor; 
+}
+
+#debug-table td * {
+    color: white; /* Primary color in Bootstrap */
+}
+
+.pt-6,
+.py-6 {
+    padding-top: 8rem !important;
+}
+
+.pr-6,
+.px-6 {
+    padding-right: 8rem !important;
+}
+
+.pb-6,
+.py-6 {
+    padding-bottom: 8rem !important;
+}
+
+.pl-6,
+.px-6 {
+    padding-left: 8rem !important;
+}

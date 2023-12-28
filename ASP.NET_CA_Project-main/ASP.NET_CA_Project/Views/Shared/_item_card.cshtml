@@ -1,0 +1,46 @@
+﻿@model ASP.NET_CA_Project.Models.Item;
+@* Checking for type of pages: Gallery, Cart, Purchased History *@
+@{
+    string controllerName = ViewContext.RouteData.Values["controller"].ToString();
+    
+}
+
+@{
+    <div class="col-md-4">
+		<div class="card h-85 text-center">
+        @{
+			string itemname = Model.ItemName + ".jpg";
+            itemname = itemname.Trim('.');
+         }
+            <img src="~/image/@itemname" class="card-img-top" alt="Product Image" width="534">
+            <div class="card-body">
+                <h5 class="card-title">
+                    <u>
+                        @Model.ItemName
+                    </u>
+                </h5>
+                <p class="card-text" style="height: 90px">@Model.Description</p>
+                @switch (controllerName)
+                {
+                    case "Gallery":
+                        <p class="card-price"><strong>@Model.Price.ToString("C")</strong></p>
+                        <a href="#"
+                           class="btn-add-to-cart btn btn-secondary"
+                           data-itemId=@Model.Id>Add to Cart</a>
+                        break;
+                    case "MyPurchases":
+                        <a href="#"
+                           class="btn w-100"
+                           style="box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);border: 1px solid #000;">Download</a>
+                        break;
+                    case "Cart":
+                        <a href="#"
+                           class="btn-remove-cart btn btn-secondary"
+                           data-itemId="@Model.Id">Remove</a>
+                        break;
+                }
+            </div>
+        </div>
+    </div>
+}
+

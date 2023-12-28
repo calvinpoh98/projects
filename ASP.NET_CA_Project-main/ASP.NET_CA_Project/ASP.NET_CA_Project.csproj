@@ -1,0 +1,49 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Views\Cart\" />
+    <None Remove="Views\Gallery\" />
+    <None Remove="Views\Login\" />
+    <None Remove="Views\MyPurchases\" />
+    <None Remove="Database\" />
+    <None Remove="Middlewares\" />
+    <None Remove="Views\Debug\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Views\Gallery\" />
+    <Folder Include="Views\Login\" />
+    <Folder Include="Views\MyPurchases\" />
+    <Folder Include="Database\" />
+    <Folder Include="Middlewares\" />
+    <Folder Include="Views\Debug\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.11" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.11" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Proxies" Version="7.0.11" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="wwwroot\css\bootstrap.min.css" />
+    <Content Remove="wwwroot\image\NET AI.jpg" />
+    <Content Remove="wwwroot\image\NET Crypto.jpg" />
+    <Content Remove="wwwroot\image\NET Cloud.jpg" />
+    <Content Remove="wwwroot\image\NET ML.jpg" />
+    <Content Remove="wwwroot\image\NET VR.jpg" />
+    <Content Remove="wwwroot\image\NET IoT.jpg" />
+    <Content Remove="wwwroot\image\NET Security.jpg" />
+    <Content Remove="wwwroot\image\NET Gaming.jpg" />
+    <Content Remove="wwwroot\image\NET Web.jpg" />
+    <Content Remove="wwwroot\image\NET Blockchain.jpg" />
+    <Content Remove="wwwroot\image\NET Mobile.jpg" />
+    <Content Remove="wwwroot\image\NET Analytics.jpg" />
+    <Content Remove="wwwroot\image\NET Database.jpg" />
+    <Content Remove="wwwroot\image\NET AR.jpg" />
+    <Content Remove="wwwroot\image\NET Network.jpg" />
+  </ItemGroup>
+</Project>
