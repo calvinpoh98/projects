@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://git.generalassemb.ly/calvinpoh98/projects/blob/376f08ba4910010898d04898db817b12817a43c0/project_2/images/us%20house.jpg" />
+  <img width="700" height="400" src="https://github.com/calvinpoh98/projects/blob/master/project_2/images/us%20house.jpg?raw=true" />
 </p>
 
 # Project 2 Ames Housing Data and Kaggle Challenge
