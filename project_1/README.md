@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://git.generalassemb.ly/calvinpoh98/labs/blob/cc630b8a83cb1f186c84e294947a4820f271fb9f/project_1/imgs/SAT_and_ACT.png" />
+  <img src="https://github.com/calvinpoh98/projects/blob/master/project_1/imgs/SAT_and_ACT.png?raw=true" />
 </p>
 
 ### Overview
